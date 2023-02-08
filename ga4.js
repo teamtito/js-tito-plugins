@@ -22,6 +22,7 @@
         price: item.price,
         item_category: registration.event.title,
         item_brand: registration.account.name,
+        affiliation: registration.source,
       });
     });
 
