@@ -46,6 +46,7 @@
         price: item.price,
         category: registration.event.title,
         brand: registration.account.name,
+        affiliation: registration.source,
       });
     });
 
@@ -54,7 +55,6 @@
       tax: registration.tax,
       coupon: registration.discount_code,
       transaction_id: registration.slug,
-      affiliation: registration.source,
       value: registration.total,
       currency: registration.currency,
       items: items,
