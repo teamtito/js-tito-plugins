@@ -1,7 +1,8 @@
 (function () {
   console.info("[tito][ga4]", "plugin loaded");
+
   window.dataLayer = window.dataLayer || [];
-  function ga4() {
+  function gtag() {
     dataLayer.push(arguments);
   }
 
@@ -33,7 +34,7 @@
       currency: registration.currency,
     };
 
-    ga4("event", "begin_checkout", eventData);
+    gtag("event", "begin_checkout", eventData);
   });
 
   tito("on:registration:finished", function (registration) {
@@ -61,6 +62,6 @@
       items: items,
     };
 
-    ga4("event", "purchase", eventData);
+    gtag("event", "purchase", eventData);
   });
 })();
