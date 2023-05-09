@@ -53,7 +53,7 @@
     });
 
     const eventData = {
-      transaction_id: "T_12345",
+      transaction_id: registration.slug,
       tax: registration.tax,
       coupon: registration.discount_code,
       transaction_id: registration.slug,
